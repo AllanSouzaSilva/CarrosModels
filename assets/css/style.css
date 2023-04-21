@@ -1,0 +1,221 @@
+:root {
+    --red: #D90429;
+    --black: #020202;
+    --brancocinza: #FFF6F8;
+    --branco: #FFF;
+    --cinza: #5A5A5A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações principais */
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--brancocinza);
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+
+.title-primary {
+    border: 2px solid yellow;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--red);
+    font-weight: 600;
+    letter-spacing: -.5px;
+}
+
+.button {
+    max-width: 200px;
+    background-color: var(--red);
+    color: var(--branco);
+    padding: 1rem;
+    margin-bottom: -80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textoPrincipal {
+    color: var(--cinza);
+    margin: 1rem 0;
+    line-height: 1.5rem;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+/* Container Header Nav */
+header {
+    margin: 0 auto;
+    margin: 0 6rem;
+    height: 550px;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: -.5px;
+
+}
+
+.logo {
+    background-color: var(--red);
+    padding: .5rem;
+    color: var(--brancocinza);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Container principal */
+.containerApresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 900px;
+    height: 450px;
+}
+
+.containerApresentacao h1 {
+    padding: 1rem 0;
+    line-height: 4rem;
+
+}
+
+.containerApresentacao h1 span {
+    color: var(--red);
+}
+
+
+
+/* Container Main */
+main {}
+
+
+/* Container Models */
+.container-models {
+    margin: 0 5rem;
+    padding: 2rem;
+}
+
+.container-models section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+}
+
+.container-models article {
+    text-align: center;
+
+}
+
+.list-car {
+    display: flex;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card-car {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 310px 200px;
+    width: 310px;
+    height: 200px;
+    border-radius: .5rem;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.card-car a {
+    background-color: var(--brancocinza);
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    border-radius: .2rem;
+    text-align: center;
+    padding: .6rem 1.5rem;
+    margin: 2px;
+    font-weight: 500;
+}
+
+.ford1 {
+    background-image: url('/assets/img/ford1.jfif');
+
+}
+
+.ford2 {
+    background-image: url('/assets/img/ford2.jfif');
+}
+
+.ford3 {
+    background-image: url('/assets/img/ford3.jfif');
+}
+
+.volkswagen1 {
+    background-image: url('/assets/img/volkswagen1.jfif');
+}
+
+.volkswagen2 {
+    background-image: url('/assets/img/volkswagen2.jfif');
+}
+
+.volkswagen3 {
+    background-image: url('/assets/img/volkswagen3.jfif');
+}
+
+.fiat1 {
+    background-image: url('/assets/img/fiat1.jfif');
+}
+
+.fiat2 {
+    background-image: url('/assets/img/fiat2.jfif');
+}
+
+.fiat3 {
+    background-image: url('/assets/img/fiat3.jfif');
+}
+
+.chevrolet1 {
+    background-image: url('/assets/img/chevrolet1.jpg');
+}
+
+.chevrolet2 {
+    background-image: url('/assets/img/chevrolet2.jfif');
+}
+
+.chevrolet3 {
+    background-image: url('/assets/img/chevrolet3.jfif');
+}
