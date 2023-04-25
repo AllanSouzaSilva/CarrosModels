@@ -174,9 +174,9 @@ main {
 
 .list-car {
     display: flex;
-    margin-top: 1rem;
-    display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 
@@ -288,6 +288,7 @@ main {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 2rem 5rem;
 }
 

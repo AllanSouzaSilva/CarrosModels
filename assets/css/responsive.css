@@ -1,0 +1,99 @@
+@media screen and (max-width:40rem) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        background: none;
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .containerApresentacao h1,
+    .container-models h2,
+    .container-price-quality h2,
+    .container-excellent h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 0;
+    }
+
+    .container-models {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .container-models section {
+        margin: 0;
+        padding: 0;
+        align-items: start;
+
+    }
+
+    .container-models p {
+        width: 450px;
+    }
+
+    .card-car {
+        margin: 10px 0;
+    }
+
+    .container-price-quality {
+        background: none;
+        padding: 1rem;
+        margin: 0;
+    }
+
+
+    .container-price-quality section {
+        width: 100%;
+    }
+
+    .container-price-quality .textoPrincipal {
+        width: 100%;
+    }
+
+
+    .container-excellent {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .container-excellent section:nth-child(1) {
+        width: 400px;
+        margin: 0;
+    }
+
+    .box-car {
+        justify-content: center;
+    }
+
+    .container-testimoials {
+        text-align: center !important;
+        padding: 0;
+    }
+
+    .box-testi-links {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container-testimoials .box-testi-links .textoPrincipal {
+        width: 100% !important;
+    }
+
+    .box-testi-links div {
+        margin-top: 5rem;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer section {
+        flex-direction: column;
+    }
+
+}
