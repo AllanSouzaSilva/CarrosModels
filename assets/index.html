@@ -21,33 +21,35 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav>
-            <a class="logo" href="#">cars <br><span>Models</span></a>
-            <a href="#">Home</a>
-            <a href="#">Modelos</a>
-            <a href="#">Marcas</a>
-            <a href="#">sobre nós</a>
-            <a href="#">Contatos</a>
+            <a class="logo" href="#home">cars <br><span>Models</span></a>
+            <a href="#home">Home</a>
+            <a href="#models">Models</a>
+            <a href="#marks">Marks</a>
+            <a href="#comments">Comments</a>
+            <a href="#contacts">Contacts</a>
             <i class="fa-solid fa-bars-staggered"></i>
         </nav>
         <section>
             <div class="containerApresentacao">
-                <h1>lorem ipsum dolor amet consectetur <span>cars </span> adipisicing elit.</h1>
-                <p class="textoPrincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h1>lorem ipsum dolor amet <br>consectetur <span>cars </span> <br>adipisicing elit.</h1>
+                <p class="textoPrincipal">Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit.
                     Fuga commodi
                     consectetur laudantium nobis
                     dolor nemo eaque, cupiditate voluptatibus fugiat placeat, quo, unde et quia.
                 </p>
                 <a class="button" href="#">Discovery Today</a>
             </div>
-            <picture class="bannerPrincipal">
-                <img src="" alt="">
-            </picture>
+
         </section>
     </header>
+    <button class="scroll-top" onclick="scrolltop()">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
     <main>
-        <aside class="container-models">
+        <aside class="container-models" id="models">
             <section>
                 <p class="title-primary"><i class="fa-solid fa-minus"></i> All cars <i class="fa-solid fa-minus"></i>
                 </p>
@@ -90,22 +92,20 @@
                 </ul>
             </article>
         </aside>
-        <aside>
+        <aside class="container-price-quality">
             <section>
-                <p class="title-primary"><i class="fa-solid fa-minus"></i> All cars <i class="fa-solid fa-minus"></i>
+                <p class="title-primary"><i class="fa-solid fa-minus"></i> Why Choose Us <i
+                        class="fa-solid fa-minus"></i>
                 </p>
-                <h2>Lorem ipsum dolor sit amet adipisicing elit.</h2>
+                <h2>Lorem ipsum dolor sit amet <br> adipisicing elit.</h2>
                 <p class="textoPrincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus
                     nobis assumenda, maxime
                     quia architecto cumque explicabo ea blanditiis qui ipsa nisi vel eligendi quod veritatis atque, fuga
                     autem corporis.</p>
-                <a class="button" href="">Sabia mais!</a>
+                <a class="button" href="">Read more</a>
             </section>
-            <picture>
-                <img src="" alt="">
-            </picture>
         </aside>
-        <aside>
+        <aside class="container-excellent" id="marks">
             <section>
                 <p class="title-primary"><i class="fa-solid fa-minus"></i> What we offer <i
                         class="fa-solid fa-minus"></i>
@@ -117,187 +117,198 @@
                     maxime veritatis ab, in nisi.</p>
             </section>
             <section>
-                <ul>
+                <ul class="box-car">
                     <li>
                         <picture>
-                            <img src="" alt="">
+                            <img src="img/sportage-removebg-preview.png" alt="">
                         </picture>
                         <div>
-                            <h3>Toyota </h3>
-                            <h2>$9,000/DAY <span><i class="fa-solid fa-star-sharp"></i></span></h2>
-                            <p><span><i class="fa-solid fa-users"></i></span>4 Person</p>
+                            <h3>bmw </h3>
+                            <h3>$9,000/DAY <span><i class="fa-solid fa-star"></i></span></h3>
+                            <p><span><i class="fa-solid fa-users"></i></span>6 Person</p>
                             <p><span><i class="fa-solid fa-car"></i></span>Auto Transmisão</p>
                             <p><span><i class="fa-solid fa-gas-pump"></i></span>Combustivél</p>
-                            <div>
+                            <div class="box-button">
                                 <a class="button" href="">Bui Now</a>
-                                <a href="">Mais detalhes <span><i class="fa-regular fa-arrow-right"></i></span></a>
+                                <a href="">View details <span><i
+                                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <picture>
-                            <img src="" alt="">
+                            <img src="img/toyota-removebg-preview.png" alt="">
                         </picture>
                         <div>
                             <h3>Toyota </h3>
-                            <h2>$9,000/DAY <span><i class="fa-solid fa-star-sharp"></i></span></h2>
-                            <p><span><i class="fa-solid fa-users"></i></span>4 Person</p>
+                            <h3>$11,000/DAY <span><i class="fa-solid fa-star"></i></span></h3>
+                            <p><span><i class="fa-solid fa-users"></i></span>5 Person</p>
                             <p><span><i class="fa-solid fa-car"></i></span>Auto Transmisão</p>
                             <p><span><i class="fa-solid fa-gas-pump"></i></span>Combustivél</p>
-                            <div>
+                            <div class="box-button">
                                 <a class="button" href="">Bui Now</a>
-                                <a href="">Mais detalhes <span><i class="fa-regular fa-arrow-right"></i></span></a>
+                                <a href="">View details <span><i
+                                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <picture>
-                            <img src="" alt="">
+                            <img src="img/landrover-removebg-preview.png" alt="">
                         </picture>
                         <div>
-                            <h3>Toyota </h3>
-                            <h2>$9,000/DAY <span><i class="fa-solid fa-star-sharp"></i></span></h2>
-                            <p><span><i class="fa-solid fa-users"></i></span>4 Person</p>
+                            <h3>Land Rover </h3>
+                            <h3>$13,000/DAY <span><i class="fa-solid fa-star"></i></span></h3>
+                            <p><span><i class="fa-solid fa-users"></i></span>7 Person</p>
                             <p><span><i class="fa-solid fa-car"></i></span>Auto Transmisão</p>
                             <p><span><i class="fa-solid fa-gas-pump"></i></span>Combustivél</p>
-                            <div>
+                            <div class="box-button">
                                 <a class="button" href="">Bui Now</a>
-                                <a href="">Mais detalhes <span><i class="fa-regular fa-arrow-right"></i></span></a>
+                                <a href="">View details <span><i
+                                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </li>
+
                 </ul>
             </section>
             <section>
-                <ul>
+                <ul class="box-car">
                     <li>
+
                         <picture>
-                            <img src="" alt="">
+                            <img class="porscheBmw" src="img/bmw-removebg-preview.png" alt="">
                         </picture>
+
                         <div>
-                            <h3>Toyota </h3>
-                            <h2>$9,000/DAY <span><i class="fa-solid fa-star-sharp"></i></span></h2>
-                            <p><span><i class="fa-solid fa-users"></i></span>4 Person</p>
+                            <h3>Sportage </h3>
+                            <h3>$12,500/DAY <span><i class="fa-solid fa-star"></i></span></h3>
+                            <p><span><i class="fa-solid fa-users"></i></span>6 Person</p>
                             <p><span><i class="fa-solid fa-car"></i></span>Auto Transmisão</p>
                             <p><span><i class="fa-solid fa-gas-pump"></i></span>Combustivél</p>
-                            <div>
+                            <div class="box-button">
                                 <a class="button" href="">Bui Now</a>
-                                <a href="">Mais detalhes <span><i class="fa-regular fa-arrow-right"></i></span></a>
+                                <a href="">View details <span><i
+                                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <picture>
-                            <img src="" alt="">
+                            <img class="porscheBmw" src="img/MercedesBenz-removebg-preview.png" alt="">
                         </picture>
                         <div>
-                            <h3>Toyota </h3>
-                            <h2>$9,000/DAY <span><i class="fa-solid fa-star-sharp"></i></span></h2>
-                            <p><span><i class="fa-solid fa-users"></i></span>4 Person</p>
+                            <h3>Mercedes bens suv </h3>
+                            <h3>$15,000/DAY <span><i class="fa-solid fa-star"></i></span></h3>
+                            <p><span><i class="fa-solid fa-users"></i></span>5 Person</p>
                             <p><span><i class="fa-solid fa-car"></i></span>Auto Transmisão</p>
                             <p><span><i class="fa-solid fa-gas-pump"></i></span>Combustivél</p>
-                            <div>
+                            <div class="box-button">
                                 <a class="button" href="">Bui Now</a>
-                                <a href="">Mais detalhes <span><i class="fa-regular fa-arrow-right"></i></span></a>
+                                <a href="">View details <span><i
+                                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <picture>
-                            <img src="" alt="">
+                            <img class="porscheBmw" src="img/porsche-removebg-preview.png" alt="">
                         </picture>
                         <div>
-                            <h3>Toyota </h3>
-                            <h2>$9,000/DAY <span><i class="fa-solid fa-star-sharp"></i></span></h2>
+                            <h3>Porsche </h3>
+                            <h3>$18,000/DAY <span><i class="fa-solid fa-star"></i></span></h3>
                             <p><span><i class="fa-solid fa-users"></i></span>4 Person</p>
                             <p><span><i class="fa-solid fa-car"></i></span>Auto Transmisão</p>
                             <p><span><i class="fa-solid fa-gas-pump"></i></span>Combustivél</p>
-                            <div>
+                            <div class="box-button">
                                 <a class="button" href="">Bui Now</a>
-                                <a href="">Mais detalhes <span><i class="fa-regular fa-arrow-right"></i></span></a>
+                                <a href="">View details <span><i
+                                            class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </li>
+
                 </ul>
             </section>
         </aside>
-        <aside>
+        <aside class="container-testimoials" id="comments">
             <section>
                 <p class="title-primary"><i class="fa-solid fa-minus"></i> TESTIMONIALS <i
                         class="fa-solid fa-minus"></i>
                 </p>
                 <h2>What client say</h2>
-                <p class="textoPrincipal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae
-                    fugit maxime ipsam
-                    dolorum, soluta dolore recusandae commodi sunt incidunt eaque, voluptatem optio accusantium,
-                    suscipit placeat corrupti reprehenderit ipsum repellat.</p>
+                <div class="box-testi-links">
+                    <p class="textoPrincipal">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perspiciatis,
+                        eaque! Natus pariatur quae voluptate voluptatem amet obcaecati cum rem, earum a molestias
+                        accusantium iste distinctio impedit iure itaque error illum?</p>
+                    <div>
+                        <span><a href=""><i class="fa-solid fa-angle-left"></i></a></span>
+                        <span><a href=""><i class="fa-solid fa-angle-right"></i></a></span>
+                    </div>
+                </div>
             </section>
             <section>
-                <div>
-                    <span><a href=""></a></span>
-                    <span><a href=""></a></span>
-                </div>
-                <section>
-                    <article>
+
+                <section class="box-testimonials">
+
+                    <article class="card-testimonials">
                         <p class="textoPrincipal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
                             voluptatem ratione sed nemo
-                            ducimus aperiam veritatis eum mollitia iste ipsam, aliquam distinctio dolores inventore
-                            fugiat, soluta nam minus repudiandae quae!</p>
+                            ducimus aperiam veritatis. quae!</p>
                         <div>
-                            <img src="" alt="">
+                            <img src="img/Homemperfil.jfif" alt="">
                             <h2>Kevin young</h2>
                             <p>Product management</p>
                         </div>
+
                     </article>
-                    <article>
+                    <article class="card-testimonials">
                         <p class="textoPrincipal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
                             voluptatem ratione sed nemo
-                            ducimus aperiam veritatis eum mollitia iste ipsam, aliquam distinctio dolores inventore
-                            fugiat, soluta nam minus repudiandae quae!</p>
+                            ducimus aperiam veritatis. quae!</p>
                         <div>
-                            <img src="" alt="">
-                            <h2>Kevin young</h2>
+                            <img src="img/mulherperfil.jfif" alt="">
+                            <h2>Meredith Grey</h2>
                             <p>Product management</p>
                         </div>
+
                     </article>
-                    <article>
+                    <article class="card-testimonials">
                         <p class="textoPrincipal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
                             voluptatem ratione sed nemo
-                            ducimus aperiam veritatis eum mollitia iste ipsam, aliquam distinctio dolores inventore
-                            fugiat, soluta nam minus repudiandae quae!</p>
+                            ducimus aperiam veritatis. quae!</p>
                         <div>
-                            <img src="" alt="">
+                            <img src="img/Homemperfil2.jfif" alt="">
                             <h2>Kevin young</h2>
                             <p>Product management</p>
                         </div>
+
                     </article>
-                    <article>
+                    <article class="card-testimonials">
                         <p class="textoPrincipal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
                             voluptatem ratione sed nemo
-                            ducimus aperiam veritatis eum mollitia iste ipsam, aliquam distinctio dolores inventore
-                            fugiat, soluta nam minus repudiandae quae!</p>
+                            ducimus aperiam veritatis. quae!</p>
                         <div>
-                            <img src="" alt="">
+                            <img src="img/Homemperfil3.jfif" alt="">
                             <h2>Kevin young</h2>
                             <p>Product management</p>
                         </div>
+
                     </article>
                 </section>
             </section>
         </aside>
     </main>
 
-    <footer>
-        <section>
+    <footer id="contacts">
+        <section class="box-footer">
             <div>
-                <a href="">cars Models</a>
-                <p class="textoPrincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum
-                    itaque eaque sunt ipsum,
-                    fuga
-                    accusantium repellat expedita doloribus? Aut ab nobis repellendus id adipisci voluptatem deserunt
-                    nisi
-                    dolores pariatur. </p>
-                <ul>
+                <a class="logo" href="#">cars <span>Models</span></a>
+                <p class="textoPrincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Asperiores harum
+                    itaque eaque sunt ipsum, fuga accusantium <br>repellat expedita doloribus?
+                    nisi dolores pariatur. </p>
+                <ul class="list-redes">
                     <li><i class="fa-brands fa-facebook-f"></i></li>
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><span><i class="fa-brands fa-twitter"></i></span></li>
@@ -307,14 +318,14 @@
             <div>
                 <h3>PAGE</h3>
                 <ul>
-                    <li><span>Home</span></li>
+                    <li><span class="home">Home</span></li>
                     <li>Service</li>
                     <li>Our</li>
                     <li>About Us</li>
                 </ul>
             </div>
             <div>
-                <h3>PAGE</h3>
+                <h3>About</h3>
                 <ul>
                     <li>Faq</li>
                     <li>Term</li>
@@ -339,12 +350,30 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <p>&copy; copyright 2023 - @developmentech (www.cars models.com.br) </p>
-        </section>
+
     </footer>
+    <section class="rodape">
+        <span>&copy; copyright 2023</span> <span>@developmentech</span> <span>(wwww.developmentech.com.br)</span>
+
+    </section>
     <script src="https://kit.fontawesome.com/e6f8c8e3e5.js" crossorigin="anonymous"></script>
 
+    <script>
+        function scrolltop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+
+            })
+        }
+    </script>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var nav = this.document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
 </body>
 
 </html>
