@@ -21,15 +21,20 @@
 </head>
 
 <body>
-    <header id="home">
+    <header class="menu" id="home">
         <nav>
-            <a class="logo" href="#home">cars <br><span>Models</span></a>
-            <a href="#home">Home</a>
-            <a href="#models">Models</a>
-            <a href="#marks">Marks</a>
-            <a href="#comments">Comments</a>
-            <a href="#contacts">Contacts</a>
-            <i class="fa-solid fa-bars-staggered"></i>
+            <div class="logo">
+                <a href="#home">Cars</a>
+                <a href="#home">Models</a>
+            </div>
+            <a class="link-nav" href="#home" style="animation-delay: 0.2s;">Home</a>
+            <a class="link-nav" href="#models" style="animation-delay: 0.3s;">Models</a>
+            <a class="link-nav" href="#marks" style="animation-delay: 0.5s;">Marks</a>
+            <a class="link-nav" href="#comments" style="animation-delay: 0.6s;">Comments</a>
+            <a class="link-nav" href="#contacts" style="animation-delay: 0.7s;">Contacts</a>
+            <button class="navbar-burger" onclick="toggleMenu()"><i class="fa-solid fa-bars-staggered link-nav"
+                    style="animation-delay: 0.8s;"></i></button>
+
         </nav>
         <section>
             <div class="containerApresentacao">
@@ -120,7 +125,7 @@
                 <ul class="box-car">
                     <li>
                         <picture>
-                            <img src="img/sportage-removebg-preview.png" alt="">
+                            <img src="/assets/img/sportage-removebg-preview.png" alt="">
                         </picture>
                         <div>
                             <h3>bmw </h3>
@@ -373,6 +378,10 @@
             var nav = this.document.querySelector("nav");
             nav.classList.toggle("sticky", window.scrollY > 0);
         });
+    </script>
+
+    <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
     </script>
 </body>
 

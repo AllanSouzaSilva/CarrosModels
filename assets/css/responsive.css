@@ -3,12 +3,18 @@
         overflow-x: hidden;
     }
 
+    .link-nav {
+        display: none;
+    }
+
     header {
         background: none;
         width: 100%;
         margin: 0;
         padding: 1rem;
     }
+
+
 
     .containerApresentacao h1,
     .container-models h2,
@@ -291,6 +297,8 @@
     }
 
     footer section {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
     }
 }
