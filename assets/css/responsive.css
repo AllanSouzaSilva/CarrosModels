@@ -3,18 +3,13 @@
         overflow-x: hidden;
     }
 
-    .link-nav {
-        display: none;
-    }
-
-    header {
+    /*  header {
         background: none;
         width: 100%;
         margin: 0;
         padding: 1rem;
     }
-
-
+*/
 
     .containerApresentacao h1,
     .container-models h2,
@@ -24,6 +19,7 @@
         line-height: 3rem;
         padding: 0;
     }
+
 
     .container-models {
         margin: 0;
@@ -113,6 +109,12 @@
         width: 100%;
         margin: 0;
         padding: 1rem;
+    }
+
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+
     }
 
     .containerApresentacao h1,
@@ -208,10 +210,22 @@
     }
 
     header {
-
         width: 100%;
         margin: 0;
         padding: 1rem;
+    }
+
+    nav .link-nav,
+    nav .links {
+        display: none;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    nav .toggle_btn {
+        display: block;
     }
 
     .containerApresentacao h1,

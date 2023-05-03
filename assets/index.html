@@ -18,24 +18,48 @@
 
     <script src="https://kit.fontawesome.com/e6f8c8e3e5.js" crossorigin="anonymous"></script>
 
+
 </head>
 
 <body>
     <header class="menu" id="home">
         <nav>
+
             <div class="logo">
                 <a href="#home">Cars</a>
                 <a href="#home">Models</a>
             </div>
-            <a class="link-nav" href="#home" style="animation-delay: 0.2s;">Home</a>
-            <a class="link-nav" href="#models" style="animation-delay: 0.3s;">Models</a>
-            <a class="link-nav" href="#marks" style="animation-delay: 0.5s;">Marks</a>
-            <a class="link-nav" href="#comments" style="animation-delay: 0.6s;">Comments</a>
-            <a class="link-nav" href="#contacts" style="animation-delay: 0.7s;">Contacts</a>
-            <button class="navbar-burger" onclick="toggleMenu()"><i class="fa-solid fa-bars-staggered link-nav"
-                    style="animation-delay: 0.8s;"></i></button>
+            <ul class="links">
+                <li><a class="link-nav" href="#home">Home</a>
+                </li>
+                <li><a class="link-nav" href="#models">Models</a>
+                </li>
+                <li><a class="link-nav" href="#marks">Marks</a>
+                </li>
+                <li><a class="link-nav" href="#comments">Comments</a>
+                </li>
+                <li><a class="link-nav" href="#contacts">Contacts</a>
+                </li>
+            </ul>
 
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
+
+        <div class="dropdown_menu">
+            <li><a href="#home">Home</a>
+            </li>
+            <li><a href="#models">Models</a>
+            </li>
+            <li><a href="#marks">Marks</a>
+            </li>
+            <li><a href="#comments">Comments</a>
+            </li>
+            <li><a href="#contacts">Contacts</a>
+            </li>
+        </div>
         <section>
             <div class="containerApresentacao">
                 <h1>lorem ipsum dolor amet <br>consectetur <span>cars </span> <br>adipisicing elit.</h1>
@@ -379,10 +403,18 @@
             nav.classList.toggle("sticky", window.scrollY > 0);
         });
     </script>
-
     <script type="text/javascript">
-        const toggleMenu = () => document.body.classList.toggle("open");
+
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
     </script>
+
 </body>
 
 </html>
