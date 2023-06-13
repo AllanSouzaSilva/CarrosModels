@@ -82,8 +82,8 @@ header {
     margin: 0 auto;
     margin: 0 6rem;
     height: 550px;
-    background-image: url('/assets/img/Wireframe\ -\ 1.png');
-    background-size: 1000px 550px;
+    background-image: url('/assets/img/backgroundprincipal.png');
+    background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
     object-fit: fill;
@@ -204,7 +204,7 @@ nav .toggle_btn {
 
 .containerApresentacao p {
     word-wrap: break-word;
-    width: 450px;
+    width: 400px;
 }
 
 /* Container Main */
